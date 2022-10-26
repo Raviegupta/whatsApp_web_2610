@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.screen {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: grid;
+}
+
+.left_bar {
+    width: 30vw;
+    height: 100vh;
+    border: 1px solid blue;
+    position: absolute;
+    display: grid;
+    grid-template-rows: repeat(20, 10vh);
+}
+
+.names {
+    height: 90vh;
+    overflow: scroll;
+}
+
+
+/* css of left-header */
+.left_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f2f5;
+
+}
+
+.left_header img {
+    margin-left: 7%;
+    height: 50px;
+    width: 50px;
+    border-radius: 1000px;
+}
+
+.left_header .left_header_icons {
+    margin-right: 7%;
+}
+
+.fa-message {
+    margin: 0 20px;
+}
+
+/* css of search bar */
+.search {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.search button {
+    height: 55%;
+    width: 10%;
+    border: transparent;
+}
+
+.search input {
+    height: 55%;
+    width: 70%;
+    margin-left: -1.5vw;
+    background-color: #f0f2f5;
+    border: transparent;
+}
+
+
+
+/* css of chatters */
+.name img {
+    height: 50px;
+    border-radius: 25px;
+}
+
+.name {
+    border-top: 1px solid grey;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 20px;
+    font-family: cursive;
+    margin-left: 4%;
+}
+
+
+/* css of right portion */
+.right_bar {
+    width: 70vw;
+    height: 100vh;
+    border: 1px solid blue;
+    position: relative;
+    left: 30vw;
+    display: grid;
+    grid-template-areas: 'right-header' 'chat-section';
+}
+
+/* css of right header */
+.right_header {
+    grid-area: right-header;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid grey; */
+    background-color: #f0f2f5;
+
+}
+
+.chat_section {
+    grid-area: chat-section;
+    margin: 2vw;
+    font-size: 25px;
+    font-family: cursive;
+    overflow: scroll;
+}
+
+.right_header .left {
+    display: flex;
+    align-items: center;
+    margin-left: 2%;
+}
+
+.right_header img {
+    height: 50px;
+    width: 50px;
+    border-radius: 1000px;
+    margin-left: 15%;
+    border-radius: 25px;
+}
+
+.chatter_name {
+    margin-left: 25%;
+    font-size: 20px;
+    font-family: cursive;
+}
+
+.right_header .right {
+    display: flex;
+    align-items: center;
+    margin-right: 7%;
+}
+
+.right_header .right .fa-search {
+    margin-right: 150%;
+}
